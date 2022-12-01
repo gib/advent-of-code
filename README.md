@@ -1,2 +1,2 @@
-# advent-of-code
-Advent of Code solutions
+# Advent of Code Solutions
+
