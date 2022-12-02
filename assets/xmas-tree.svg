@@ -3,11 +3,8 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
                 @keyframes onoff {
-                    0% { opacity: 0; }
-                    1% { opacity: 1; }
-                    50% { opacity: 1; }
-                    51% { opacity: 0; }
-                    100% { opacity: 0; }
+                    0% { opacity: .5; }
+                    100% { opacity: 1; }
                 }
 
                 .tree {
@@ -37,10 +34,8 @@
                     font-size: 32px;
                     color: red;
                     content: "*";
-                    opacity: 1;
                     position: absolute;
                     transform: translate(-5px, -12px);
-                    transition: opacity;
                     animation-duration: 3s;
                     animation-name: onoff;
                     animation-iteration-count: infinite;
@@ -60,7 +55,7 @@
                     ///\<span></span>\
                 </div>
                 <div class="bow">
-                    //<span></span>/\\\<span></span>\
+                    //<span></span>/\\\\\
                 </div>
                 <div class="bow">
                     ///<span></span>/\<span></span>\\\
@@ -72,7 +67,7 @@
                     ////<span></span>/\\<span></span>\\\\<span></span>
                 </div>
                 <div class="bow">
-                    ////<span></span>/\\<span></span>\\\<span></span>
+                    /<span></span>////\\<span></span>\\\\
                 </div>
                 <div class="bow">
                     ////<span></span>/\\<span></span>\\\<span></span>
