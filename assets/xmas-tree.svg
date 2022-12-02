@@ -1,0 +1,100 @@
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+                @keyframes onoff {
+                    0% { opacity: 0; }
+                    1% { opacity: 1; }
+                    50% { opacity: 1; }
+                    51% { opacity: 0; }
+                    100% { opacity: 0; }
+                }
+
+                .tree {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    font-family: monospace;  
+                    justify-content: center;
+                    width: 100%;
+                }
+
+                .star {
+                    color: #ffd649;
+                    font-size: 42px;
+                    margin-top: 20px;
+                    transform: translate(0, 6px);
+                }
+
+                .bow {
+                    color: #009c00;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                .bow span {
+                }
+                .bow span:after {
+                    font-size: 32px;
+                    color: red;
+                    content: "*";
+                    opacity: 1;
+                    position: absolute;
+                    transform: translate(-5px, -12px);
+                    transition: opacity;
+                    animation-duration: 3s;
+                    animation-name: onoff;
+                    animation-iteration-count: infinite;
+                    }
+                }
+                .trunk {
+                    color: #634225;
+                }
+			</style>
+            <div class="tree">
+                <div class="star">✷</div>
+                <div class="bow">/\</div>
+                <div class="bow">
+                    /<span></span>\\
+                </div>
+                <div class="bow">
+                    ///\<span></span>\
+                </div>
+                <div class="bow">
+                    //<span></span>/\\\<span></span>\
+                </div>
+                <div class="bow">
+                    ///<span></span>/\<span></span>\\\
+                </div>
+                <div class="bow">
+                    //<span></span>///\<span></span>\\\<span></span>\
+                </div>
+                <div class="bow">
+                    ////<span></span>/\\<span></span>\\\\<span></span>
+                </div>
+                <div class="bow">
+                    ////<span></span>/\\<span></span>\\\<span></span>
+                </div>
+                <div class="bow">
+                    ////<span></span>/\\<span></span>\\\<span></span>
+                </div>
+                <div class="bow">
+                    ////<span></span>/\\<span></span>\\\<span></span>
+                </div>
+                <div class="bow">
+                    ////<span></span>// <span></span>\\ \<span></span>
+                </div>
+                <div class="bow">
+                    /////<span></span>/\\<span></span>\\\\<span></span>
+                </div>
+                <div class="bow">
+                    ////<span></span> \\<span></span>\\\\<span></span>
+                </div>
+                <div class="bow">
+                    //<span></span>//<span></span>/\\<span></span>\\\\<span></span>
+                </div>
+                <div class="trunk">██</div>
+                <div class="trunk">██</div>
+            </div>
+		</div>
+	</foreignObject>
+</svg>
