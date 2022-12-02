@@ -9,7 +9,7 @@ const rounds = fs.readFileSync('./input.txt', 'utf-8').split(/\r?\n/);
 //  with...
 //      rock: 1
 //      paper: 2
-//      scissors: 2
+//      scissors: 3
 const scoreLookup = {
     // Lose to Paper (with Rock): 0 + 1
     "B X": 1,
