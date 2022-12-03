@@ -13,7 +13,7 @@
 
                 .heading {
                     position: absolute;
-                    transform: translate(250px, 75px);
+                    transform: translate(100px, 50px);
                     width: 250px;
                     word-spacing: -.25em;
                 }
