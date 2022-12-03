@@ -7,6 +7,31 @@
                     100% { opacity: 1; }
                 }
 
+                :root {
+                    font-family: monospace;
+                }
+
+                .heading {
+                    position: absolute;
+                    transform: translate(250px, 75px);
+                    width: 250px;
+                    word-spacing: -.25em;
+                }
+                .heading h1 {
+                    font-size: 50px;
+                    font-weight: bold;
+                    margin-bottom: 12px;
+                }
+                .heading h2 {
+                    font-size: 18px;
+                    margin-bottom: 12px;
+                    text-transform: uppercase;
+                    width: 80%
+                }
+                .heading h3 {
+                    font-size: 12px;
+                }
+
                 .tree {
                     align-items: center;
                     display: flex;
@@ -23,73 +48,69 @@
                     transform: translate(0, 6px);
                 }
 
-                .bow {
+                .bough {
                     color: #009c00;
                     font-weight: bold;
                     font-size: 16px;
                 }
-                .bow span {
-                }
-                .bow span:after {
-                    font-size: 32px;
-                    color: red;
-                    content: "*";
-                    position: absolute;
-                    transform: translate(-5px, -12px);
-                    animation-duration: 3s;
-                    animation-name: onoff;
-                    animation-iteration-count: infinite;
-                    }
-                }
+
                 .trunk {
+                    font-weight: bold;
                     color: #634225;
                 }
 			</style>
+		    <div class="heading">
+                <h1>Advent of Code</h1>
+                <h2>Holiday themed coding challenge advent calendar</h2>
+                <h3>
+                    <a href="https://adventofcode.com">adventofcode.com</a>
+                </h3>
+            </div>
             <div class="tree">
                 <div class="star">✷</div>
-                <div class="bow">/\</div>
-                <div class="bow">
-                    /<span></span>\\
+                <div class="bough">/\</div>
+                <div class="bough">
+                    //<span></span>\\
                 </div>
-                <div class="bow">
-                    ///\<span></span>\
+                <div class="bough">
+                    ///\<span></span>\\
                 </div>
-                <div class="bow">
-                    //<span></span>/\\\\\
+                <div class="bough">
+                    /<span></span>///\<span></span>\\\
                 </div>
-                <div class="bow">
-                    ///<span></span>/\<span></span>\\\
+                <div class="bough">
+                    ///<span></span>//\\<span></span>\\\
                 </div>
-                <div class="bow">
+                <div class="bough">
                     //<span></span>///\<span></span>\\\<span></span>\
                 </div>
-                <div class="bow">
-                    ////<span></span>/\\<span></span>\\\\<span></span>
+                <div class="bough">
+                    ////<span></span>//\<span></span>\\\\\<span></span>
                 </div>
-                <div class="bow">
-                    /<span></span>////\\<span></span>\\\\
+                <div class="bough">
+                    //<span></span>/////\\<span></span>\\\\<span></span>\
                 </div>
-                <div class="bow">
-                    ////<span></span>/\\<span></span>\\\<span></span>
+                <div class="bough">
+                    //<span></span>////<span></span>//\\\<span></span>\\\\<span></span>\
                 </div>
-                <div class="bow">
-                    ////<span></span>/\\<span></span>\\\<span></span>
+                <div class="bough">
+                    //<span></span>////<span></span>///\\<span></span>\\\\\<span></span>\
                 </div>
-                <div class="bow">
-                    ////<span></span>// <span></span>\\ \<span></span>
+                <div class="bough">
+                    /////<span></span>////\\<span></span>\\\\<span></span>\\\
                 </div>
-                <div class="bow">
-                    /////<span></span>/\\<span></span>\\\\<span></span>
+                <div class="bough">
+                    /<span></span>//////<span></span>///\\<span></span>\\\\\<span></span>\\\
                 </div>
-                <div class="bow">
-                    ////<span></span> \\<span></span>\\\\<span></span>
+                <div class="bough">
+                    ///<span></span>/////<span></span>//\\\<span></span>\\\\<span></span>\\\
                 </div>
-                <div class="bow">
-                    //<span></span>//<span></span>/\\<span></span>\\\\<span></span>
+                <div class="bough">
+                    //<span></span>////<span></span>/////\\<span></span>\\\<span></span>\\\\<span></span>\\
                 </div>
-                <div class="trunk">██</div>
-                <div class="trunk">██</div>
+                <div class="trunk">|||</div>
+                <div class="trunk">|||</div>
             </div>
-		</div>
+        </div>
 	</foreignObject>
 </svg>

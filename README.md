@@ -1,5 +1,3 @@
-# Advent of Code Solutions
-
 <img src="assets/xmas-tree.svg" alt="X-Max Tree">
 
 So far all of my solutions are in JavaScript.
