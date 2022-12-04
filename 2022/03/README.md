@@ -35,9 +35,6 @@ is `16` (`p`), `38` (`L`), `42` (`P`), `22` (`v`), `20` (`t`), and `19` (`s`); t
 
 Find the item type that appears in both compartments of each rucksack. What is the sum of the priorities of those item types?
 
-Your puzzle answer was `7980`.
-
-
 ### --- Part Two ---
 As you finish identifying the misplaced items, the Elves come to you with another issue.
 
