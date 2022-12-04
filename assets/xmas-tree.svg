@@ -2,25 +2,46 @@
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
-                @keyframes onoff {
-                    0% { opacity: .5; }
-                    100% { opacity: 1; }
+                @keyframes twinkle-twinkle {
+                    0% {
+                        text-shadow: 0 0 80px #ffd649, 0 0 25px #ffd649;
+                    }
+                    50% {
+                        transform: rotate(-2deg);
+                        text-shadow: 0 0 40px #ffd649, 0 0 15px #ffd649;
+                    }
+                    100% {
+                        transform: rotate(2deg);
+                        text-shadow: 0 0 80px #ffd649, 0 0 25px #ffd649;
+                    }
                 }
 
                 :root {
+                    background-color: black;
                     font-family: monospace;
                 }
 
+                .container {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+
+                @media all and min-width(200px) {
+                    .container {
+                        flex-direction: column-reverse;
+                    }
+                }
+
                 .heading {
-                    position: absolute;
+                    color: #00cc00;
                     transform: translate(100px, 50px);
-                    width: 250px;
+                    min-width: 250px;
                     word-spacing: -.25em;
                 }
                 .heading h1 {
                     font-size: 50px;
-                    font-weight: bold;
                     margin-bottom: 12px;
+                    text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
                 }
                 .heading h2 {
                     font-size: 18px;
@@ -28,8 +49,10 @@
                     text-transform: uppercase;
                     width: 80%
                 }
-                .heading h3 {
+                .heading h3 a {
+                    color: #00cc00;
                     font-size: 12px;
+                    text-transform: none;
                 }
 
                 .tree {
@@ -38,14 +61,17 @@
                     flex-direction: column;
                     font-family: monospace;  
                     justify-content: center;
-                    width: 100%;
+                    min-width: 222px;
+                    width: 33%;
                 }
 
                 .star {
                     color: #ffd649;
                     font-size: 42px;
                     margin-top: 20px;
-                    transform: translate(0, 6px);
+                    position: relative;
+                    top: 10px;
+                    animation: 3s ease-in-out 0s infinite alternate twinkle-twinkle;
                 }
 
                 .bough {
@@ -53,63 +79,131 @@
                     font-weight: bold;
                     font-size: 16px;
                 }
-
+                .bough b {
+                    font-size: 32px;
+                    color: white;
+                    position: absolute;
+                }
                 .trunk {
                     font-weight: bold;
                     color: #634225;
                 }
 			</style>
-		    <div class="heading">
-                <h1>Advent of Code</h1>
-                <h2>Holiday themed coding challenge advent calendar</h2>
-                <h3>
+            <div class="container">
+                <div class="heading">
+                    <h1>Advent of Code</h1>
+                    <h2>Holiday themed coding challenge advent calendar</h2>
+                    <h3>
                     <a href="https://adventofcode.com">adventofcode.com</a>
-                </h3>
-            </div>
-            <div class="tree">
-                <div class="star">✷</div>
-                <div class="bough">/\</div>
-                <div class="bough">
-                    //<span></span>\\
+                    </h3>
                 </div>
-                <div class="bough">
-                    ///\<span></span>\\
+                <div class="tree">
+                    <div class="star">✷</div>
+                    <div class="bough">/\</div>
+                    <div class="bough">
+                        <b>*</b>
+                        //\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        ///\\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        ////\\\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        /////\\\\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        /////\\\\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        //////\\\\\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        ///////\\\\\\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        ////////\\\\\\\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        /////////\\\\\\\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        /////////\\\\\\\\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        //////////\\\\\\\\\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        //////////\\\\\\\\\\
+                    </div>
+                    <div class="bough">
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        <b>*</b>
+                        ///////////\\\\\\\\\\\
+                    </div>
+                    <div class="trunk">|||</div>
+                    <div class="trunk">|||</div>
                 </div>
-                <div class="bough">
-                    /<span></span>///\<span></span>\\\
-                </div>
-                <div class="bough">
-                    ///<span></span>//\\<span></span>\\\
-                </div>
-                <div class="bough">
-                    //<span></span>///\<span></span>\\\<span></span>\
-                </div>
-                <div class="bough">
-                    ////<span></span>//\<span></span>\\\\\<span></span>
-                </div>
-                <div class="bough">
-                    //<span></span>/////\\<span></span>\\\\<span></span>\
-                </div>
-                <div class="bough">
-                    //<span></span>////<span></span>//\\\<span></span>\\\\<span></span>\
-                </div>
-                <div class="bough">
-                    //<span></span>////<span></span>///\\<span></span>\\\\\<span></span>\
-                </div>
-                <div class="bough">
-                    /////<span></span>////\\<span></span>\\\\<span></span>\\\
-                </div>
-                <div class="bough">
-                    /<span></span>//////<span></span>///\\<span></span>\\\\\<span></span>\\\
-                </div>
-                <div class="bough">
-                    ///<span></span>/////<span></span>//\\\<span></span>\\\\<span></span>\\\
-                </div>
-                <div class="bough">
-                    //<span></span>////<span></span>/////\\<span></span>\\\<span></span>\\\\<span></span>\\
-                </div>
-                <div class="trunk">|||</div>
-                <div class="trunk">|||</div>
             </div>
         </div>
 	</foreignObject>
