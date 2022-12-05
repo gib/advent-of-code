@@ -10,8 +10,6 @@
                     --blue: #00a3ff;
                     --purple: #ad00ff;
                     --fuscia: #ff007A;
-                    background-color: black;
-                    border-radius: 20px;
                     font-family: monospace;
                 }
 
@@ -244,6 +242,8 @@
                 }
 
                 .container {
+                    background-color: black;
+                    border-radius: 20px;
                     display: flex;
                     flex-direction: row;
                 }
@@ -282,12 +282,12 @@
                 }
 
                 .star {
+                    animation: 3s ease-in-out 0s infinite alternate twinkle-twinkle;
                     color: #ffd649;
                     font-size: 42px;
                     margin-top: 20px;
                     position: relative;
                     top: 10px;
-                    animation: 3s ease-in-out 0s infinite alternate twinkle-twinkle;
                 }
 
                 .bough {
