@@ -2,23 +2,245 @@
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
-                @keyframes twinkle-twinkle {
+                :root {
+                    --red: #eb0000;
+                    --orange: #f90;
+                    --yellow: #faff00;
+                    --green: #42ff00;
+                    --blue: #00a3ff;
+                    --purple: #ad00ff;
+                    --fuscia: #ff007A;
+                    background-color: black;
+                    border-radius: 20px;
+                    font-family: monospace;
+                }
+
+                @keyframes start-red {
                     0% {
-                        text-shadow: 0 0 80px #ffd649, 0 0 25px #ffd649;
+                        color: var(--red);
+                        text-shadow: 0 0 25px var(--red), 0 0 12px var(--red);
                     }
-                    50% {
-                        transform: rotate(-2deg);
-                        text-shadow: 0 0 40px #ffd649, 0 0 15px #ffd649;
+                    17% {
+                        color: var(--orange);
+                        text-shadow: 0 0 25px var(--orange), 0 0 12px var(--orange);
+                    }
+                    34% {
+                        color: var(--yellow);
+                        text-shadow: 0 0 25px var(--yellow), 0 0 12px var(--yellow);
+                    }
+                    51% {
+                        color: var(--green);
+                        text-shadow: 0 0 25px var(--green), 0 0 12px var(--green);
+                    }
+                    68% {
+                        color: var(--blue);
+                        text-shadow: 0 0 25px var(--blue), 0 0 12px var(--blue);
+                    }
+                    85% {
+                        color: var(--purple);
+                        text-shadow: 0 0 25px var(--purple), 0 0 12px var(--purple);
                     }
                     100% {
-                        transform: rotate(2deg);
-                        text-shadow: 0 0 80px #ffd649, 0 0 25px #ffd649;
+                        color: var(--fuscia);
+                        text-shadow: 0 0 25px var(--fuscia), 0 0 12px var(--fuscia);
                     }
                 }
 
-                :root {
-                    background-color: black;
-                    font-family: monospace;
+                @keyframes start-orange {
+                    0% {
+                        color: var(--orange);
+                        text-shadow: 0 0 25px var(--orange), 0 0 12px var(--orange);
+                    }
+                    17% {
+                        color: var(--yellow);
+                        text-shadow: 0 0 25px var(--yellow), 0 0 12px var(--yellow);
+                    }
+                    34% {
+                        color: var(--green);
+                        text-shadow: 0 0 25px var(--green), 0 0 12px var(--green);
+                    }
+                    51% {
+                        color: var(--blue);
+                        text-shadow: 0 0 25px var(--blue), 0 0 12px var(--blue);
+                    }
+                    68% {
+                        color: var(--purple);
+                        text-shadow: 0 0 25px var(--purple), 0 0 12px var(--purple);
+                    }
+                    85% {
+                        color: var(--fuscia);
+                        text-shadow: 0 0 25px var(--fuscia), 0 0 12px var(--fuscia);
+                    }
+                    100% {
+                        color: var(--red);
+                        text-shadow: 0 0 25px var(--red), 0 0 12px var(--red);
+                    }
+                }
+
+                @keyframes start-yellow {
+                    0% {
+                        color: var(--yellow);
+                        text-shadow: 0 0 25px var(--yellow), 0 0 12px var(--yellow);
+                    }
+                    17% {
+                        color: var(--green);
+                        text-shadow: 0 0 25px var(--green), 0 0 12px var(--green);
+                    }
+                    34% {
+                        color: var(--blue);
+                        text-shadow: 0 0 25px var(--blue), 0 0 12px var(--blue);
+                    }
+                    51% {
+                        color: var(--purple);
+                        text-shadow: 0 0 25px var(--purple), 0 0 12px var(--purple);
+                    }
+                    68% {
+                        color: var(--fuscia);
+                        text-shadow: 0 0 25px var(--fuscia), 0 0 12px var(--fuscia);
+                    }
+                    85% {
+                        color: var(--red);
+                        text-shadow: 0 0 25px var(--red), 0 0 12px var(--red);
+                    }
+                    100% {
+                        color: var(--orange);
+                        text-shadow: 0 0 25px var(--orange), 0 0 12px var(--orange);
+                    }
+                }
+
+                @keyframes start-green {
+                    0% {
+                        color: var(--green);
+                        text-shadow: 0 0 25px var(--green), 0 0 12px var(--green);
+                    }
+                    17% {
+                        color: var(--blue);
+                        text-shadow: 0 0 25px var(--blue), 0 0 12px var(--blue);
+                    }
+                    34% {
+                        color: var(--purple);
+                        text-shadow: 0 0 25px var(--purple), 0 0 12px var(--purple);
+                    }
+                    51% {
+                        color: var(--fuscia);
+                        text-shadow: 0 0 25px var(--fuscia), 0 0 12px var(--fuscia);
+                    }
+                    68% {
+                        color: var(--red);
+                        text-shadow: 0 0 25px var(--red), 0 0 12px var(--red);
+                    }
+                    85% {
+                        color: var(--orange);
+                        text-shadow: 0 0 25px var(--orange), 0 0 12px var(--orange);
+                    }
+                    100% {
+                        color: var(--yellow);
+                        text-shadow: 0 0 25px var(--yellow), 0 0 12px var(--yellow);
+                    }
+                }
+
+                @keyframes start-blue {
+                    0% {
+                        color: var(--blue);
+                        text-shadow: 0 0 25px var(--blue), 0 0 12px var(--blue);
+                    }
+                    17% {
+                        color: var(--purple);
+                        text-shadow: 0 0 25px var(--purple), 0 0 12px var(--purple);
+                    }
+                    34% {
+                        color: var(--fuscia);
+                        text-shadow: 0 0 25px var(--fuscia), 0 0 12px var(--fuscia);
+                    }
+                    51% {
+                        color: var(--red);
+                        text-shadow: 0 0 25px var(--red), 0 0 12px var(--red);
+                    }
+                    68% {
+                        color: var(--orange);
+                        text-shadow: 0 0 25px var(--orange), 0 0 12px var(--orange);
+                    }
+                    85% {
+                        color: var(--yellow);
+                        text-shadow: 0 0 25px var(--yellow), 0 0 12px var(--yellow);
+                    }
+                    100% {
+                        color: var(--green);
+                        text-shadow: 0 0 25px var(--green), 0 0 12px var(--green);
+                    }
+                }
+
+                @keyframes start-purple {
+                    0% {
+                        color: var(--purple);
+                        text-shadow: 0 0 25px var(--purple), 0 0 12px var(--purple);
+                    }
+                    17% {
+                        color: var(--fuscia);
+                        text-shadow: 0 0 25px var(--fuscia), 0 0 12px var(--fuscia);
+                    }
+                    34% {
+                        color: var(--red);
+                        text-shadow: 0 0 25px var(--red), 0 0 12px var(--red);
+                    }
+                    51% {
+                        color: var(--orange);
+                        text-shadow: 0 0 25px var(--orange), 0 0 12px var(--orange);
+                    }
+                    68% {
+                        color: var(--yellow);
+                        text-shadow: 0 0 25px var(--yellow), 0 0 12px var(--yellow);
+                    }
+                    85% {
+                        color: var(--green);
+                        text-shadow: 0 0 25px var(--green), 0 0 12px var(--green);
+                    }
+                    100% {
+                        color: var(--blue);
+                        text-shadow: 0 0 25px var(--blue), 0 0 12px var(--blue);
+                    }
+                }
+
+                @keyframes start-fuscia {
+                    0% {
+                        color: var(--fuscia);
+                        text-shadow: 0 0 25px var(--fuscia), 0 0 12px var(--fuscia);
+                    }
+                    17% {
+                        color: var(--red);
+                        text-shadow: 0 0 25px var(--red), 0 0 12px var(--red);
+                    }
+                    34% {
+                        color: var(--orange);
+                        text-shadow: 0 0 25px var(--orange), 0 0 12px var(--orange);
+                    }
+                    51% {
+                        color: var(--yellow);
+                        text-shadow: 0 0 25px var(--yellow), 0 0 12px var(--yellow);
+                    }
+                    68% {
+                        color: var(--green);
+                        text-shadow: 0 0 25px var(--green), 0 0 12px var(--green);
+                    }
+                    85% {
+                        color: var(--blue);
+                        text-shadow: 0 0 25px var(--blue), 0 0 12px var(--blue);
+                    }
+                    100% {
+                        color: var(--purple);
+                        text-shadow: 0 0 25px var(--purple), 0 0 12px var(--purple);
+                    }
+                }
+
+                @keyframes twinkle-twinkle {
+                    from {
+                        transform: rotate(-2deg);
+                        text-shadow: 0 0 60px #ffd649, 0 0 15px #fff;
+                    }
+                    to {
+                        transform: rotate(2deg);
+                        text-shadow: 0 0 10px #ffd649, 0 0 5px #fff;
+                    }
                 }
 
                 .container {
@@ -74,9 +296,11 @@
                     font-size: 16px;
                 }
                 .bough b {
+                    animation: 1s ease-in-out var(--delay) infinite alternate var(--anim);
                     font-size: 32px;
-                    color: white;
+                    color: var(--ornament-color);
                     position: absolute;
+                    transform: translate(var(--offsetX), var(--offsetY));
                 }
                 .trunk {
                     font-weight: bold;
@@ -88,111 +312,77 @@
                     <h1>Advent of Code</h1>
                     <h2>Holiday themed coding challenge advent calendar</h2>
                     <h3>
-                    <a href="https://adventofcode.com">adventofcode.com</a>
+                        <a href="https://adventofcode.com">adventofcode.com</a>
                     </h3>
                 </div>
                 <div class="tree">
                     <div class="star">✷</div>
-                    <div class="bough">/\</div>
                     <div class="bough">
-                        <b>*</b>
+                        /\
+                    </div>
+                    <div class="bough">
+                        <b style="--anim: start-green; --delay: .75s; --offsetX: 18px; --offsetY: -12px; --ornament-color: var(--green);">•</b>
                         //\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
+                        <b style="--anim: start-blue; --delay: 0s; --offsetX: 5px; --offsetY: -5px; --ornament-color: var(--blue);">•</b>
+                        <b style="--anim: start-orange; --delay: .3s; --offsetX: 40px; --offsetY: 2px; --ornament-color: var(--orange);">•</b>
                         ///\\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
+                        <b style="--anim: start-red; --delay: 0s; --offsetX: 0px; --offsetY: 0px; --ornament-color: var(--red);">•</b>
+                        <b style="--anim: start-green; --delay: .75s; --offsetX: 35px; --offsetY: 10px; --ornament-color: var(--green);">•</b>
                         ////\\\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
+                        <b style="--anim: start-blue; --delay: .7s; --offsetX: 0px; --offsetY: 20px; --ornament-color: var(--blue);">•</b>
+                        <b style="--anim: start-orange; --delay: .25s; --offsetX: 28px; --offsetY: 15px; --ornament-color: var(--purple);">•</b>
+                        <b style="--anim: start-yellow; --delay: .5s; --offsetX: 85px; --offsetY: 10px; --ornament-color: var(--yellow)">•</b>
+                        <b style="--anim: start-fuscia; --delay: 0s; --offsetX: 60px; --offsetY: 20px; --ornament-color: var(--fuscia)">•</b>
                         /////\\\\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
                         /////\\\\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
+                        <b style="--anim: start-red; --delay: .7s; --offsetX: -10px; --offsetY: 25px; --ornament-color: var(--red);">•</b>
+                        <b style="--anim: start-fuscia; --delay: .5s; --offsetX: 20px; --offsetY: 15px; --ornament-color: var(--fuscia);">•</b>
+                        <b style="--anim: start-yellow; --delay: .8s; --offsetX: 85px; --offsetY: 10px; --ornament-color: var(--yellow)">•</b>
+                        <b style="--anim: start-fuscia; --delay: 0s; --offsetX: 60px; --offsetY: 20px; --ornament-color: var(--fuscia)">•</b>
                         //////\\\\\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
                         ///////\\\\\\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
                         ////////\\\\\\\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
+                        <b style="--anim: start-orange; --delay: .3s; --offsetX: -2px; --offsetY: 5px; --ornament-color: var(--orange);">•</b>
+                        <b style="--anim: start-blue; --delay: 0s; --offsetX: 35px; --offsetY: 0px; --ornament-color: var(--blue);">•</b>
+                        <b style="--anim: start-red; --delay: .7s; --offsetX: 75px; --offsetY: 15px; --ornament-color: var(--blue);">•</b>
+                        <b style="--anim: start-fuscia; --delay: .6s; --offsetX: 100px; --offsetY: -5px; --ornament-color: var(--fuscia)">•</b>
+                        <b style="--anim: start-green; --delay: .6s; --offsetX: 140px; --offsetY: -15px; --ornament-color: var(--green)">•</b>
                         /////////\\\\\\\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
                         /////////\\\\\\\\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
+                        <b style="--anim: start-red; --delay: .7s; --offsetX: -5px; --offsetY: 15px; --ornament-color: var(--red);">•</b>
+                        <b style="--anim: start-fuscia; --delay: .5s; --offsetX: 180px; --offsetY: 15px; --ornament-color: var(--fuscia);">•</b>
+                        <b style="--anim: start-yellow; --delay: .8s; --offsetX: 140px; --offsetY: -10px; --ornament-color: var(--yellow)">•</b>
+                        <b style="--anim: start-fuscia; --delay: 0s; --offsetX: 90px; --offsetY: 20px; --ornament-color: var(--fuscia)">•</b>
+                        <b style="--anim: start-fuscia; --delay: .5s; --offsetX: 30px; --offsetY: 0px; --ornament-color: var(--fuscia);">•</b>
+                        <b style="--anim: start-yellow; --delay: .8s; --offsetX: 120px; --offsetY: 10px; --ornament-color: var(--yellow)">•</b>
                         //////////\\\\\\\\\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
+                        <b style="--anim: start-fuscia; --delay: 0s; --offsetX: 60px; --offsetY: -5px; --ornament-color: var(--fuscia)">•</b>
+                        <b style="--anim: start-orange; --delay: 0s; --offsetX: 150px; --offsetY: 8px; --ornament-color: var(--orange)">•</b>
                         //////////\\\\\\\\\\
                     </div>
                     <div class="bough">
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
-                        <b>*</b>
                         ///////////\\\\\\\\\\\
                     </div>
                     <div class="trunk">|||</div>
