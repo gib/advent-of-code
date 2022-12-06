@@ -250,24 +250,24 @@
 
                 .heading {
                     color: #00cc00;
-                    transform: translate(100px, 50px);
+                    padding: 50px 0 0 50px;
                     min-width: 250px;
                     word-spacing: -.25em;
                 }
                 .heading h1 {
-                    font-size: 50px;
+                    font-size: 4em;
                     margin-bottom: 12px;
                     text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
                 }
                 .heading h2 {
-                    font-size: 18px;
+                    font-size: 1em;
                     margin-bottom: 12px;
                     text-transform: uppercase;
                     width: 80%
                 }
                 .heading h3 a {
                     color: #00cc00;
-                    font-size: 12px;
+                    font-size: .9em;
                     text-transform: none;
                 }
 
@@ -297,10 +297,13 @@
                 }
                 .bough b {
                     animation: 1s ease-in-out var(--delay) infinite alternate var(--anim);
-                    font-size: 32px;
                     color: var(--ornament-color);
-                    position: absolute;
+                    float: left;
+                    font-size: 32px;
+                    height: 0;
+                    position: relative;
                     transform: translate(var(--offsetX), var(--offsetY));
+                    width: 0;
                 }
                 .trunk {
                     font-weight: bold;
