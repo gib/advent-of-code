@@ -10,13 +10,11 @@ $ node solution.js
 ```
 
 2022 is my first year participating in the [Advent of Code](https://adventofcode.com).
-It really is a lot of fun, especially "talking shop" and sharing solutions.
+Thank you [zaccb](https://github.com/zaccb/advent-of-code) for introducing me to it.
 
-Thank you [zaccb](https://github.com/zaccb/advent-of-code) for introducing me to
-[Advent of Code](https://adventofcode.com)!
-
-Colleagues and friends I've enjoyed comparing solutions with:
+Colleagues and friends I've enjoyed talking shop and sharing solutions with:
 * [zaccb](https://github.com/zaccb/advent-of-code)
 * [rowofpixels](https://github.com/rowofpixels/advent-of-code)
 * [chriszacny](https://github.com/chriszacny/advent-of-code-2022/)
 * [xb4r7x](https://github.com/xb4r7x/adventOfCode2022/)
+* [4141done](https://github.com/4141done/advent_of_code_solutions)
