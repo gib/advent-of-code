@@ -243,8 +243,8 @@
 
                 .container {
                     background: #000;
-                    background: -webkit-linear-gradient(to top, #0F2027, #061013, #000000);
-                    background: linear-gradient(to top, #0F2027, #061013, #000000);
+                    background: -webkit-linear-gradient(to top, #0d1117, #060508, #000000);
+                    background: linear-gradient(to top, #0d1117, #060508, #000000);
                     border-radius: 20px;
                     display: flex;
                     flex-direction: row;
