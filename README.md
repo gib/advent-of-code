@@ -15,7 +15,7 @@ It really is a lot of fun, especially "talking shop" and sharing solutions.
 Thank you [zaccb](https://github.com/zaccb/advent-of-code) for introducing me to
 [Advent of Code](https://adventofcode.com)!
 
-Colleagues and friends I've enjoys comparing solutions with:
+Colleagues and friends I've enjoyed comparing solutions with:
 * [zaccb](https://github.com/zaccb/advent-of-code)
 * [rowofpixels](https://github.com/rowofpixels/advent-of-code)
 * [chriszacny](https://github.com/chriszacny/advent-of-code-2022/)
