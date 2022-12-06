@@ -243,7 +243,7 @@
 
                 .container {
                     background: #000;
-                    background: linear-gradient(to top, #0d1117, #0d1117 %40, #060508 );
+                    background: linear-gradient(to top, #0d1117 75%, #060508);
                     border-radius: 20px;
                     height: 400px;
                     display: flex;
