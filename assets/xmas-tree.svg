@@ -267,6 +267,11 @@
                     margin-bottom: 12px;
                     text-transform: uppercase;
                 }
+
+                .heading h1 span, .heading h2 span {
+                    white-space: nowrap;
+                }
+
                 .heading h3 a {
                     color: #00cc00;
                     font-size: .9em;
@@ -313,8 +318,8 @@
 			</style>
             <div class="container">
                 <div class="heading">
-                    <h1>Advent of Code</h1>
-                    <h2>Holiday themed coding challenge advent calendar</h2>
+                    <h1>Advent <span>of Code</span></h1>
+                    <h2>Holiday themed coding challenge <span>advent calendar</span></h2>
                     <h3>
                         <a href="https://adventofcode.com">adventofcode.com</a>
                     </h3>

@@ -1,4 +1,4 @@
-<img src="assets/xmas-tree.svg" alt="X-Max Tree">
+<img src="assets/xmas-tree.svg" alt="xmas tree with blinking colored lights">
 
 So far all of my solutions are in JavaScript.
 I run solutions with node in the directory of the day.
