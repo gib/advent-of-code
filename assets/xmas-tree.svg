@@ -10,7 +10,7 @@
                     --blue: #00a3ff;
                     --purple: #ad00ff;
                     --fuscia: #ff007A;
-                    font-family: monospace;
+                    font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
                 }
 
                 @keyframes start-red {
@@ -254,15 +254,19 @@
                     color: #00cc00;
                     max-width: 50%;
                     padding: 50px 0 0 50px;
-                    word-spacing: -.33em;
+                    <!-- word-spacing: -.33em; -->
                 }
                 .heading h1 {
-                    font-size: 4em;
-                    margin-bottom: 12px;
+                    font-size: 3em;
+                    font-weight: normal;
+                    letter-spacing: .2rem;
+                    word-spacing: -1rem;
+                    margin-bottom: 1.5rem;
                     text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
                 }
                 .heading h2 {
-                    font-size: 1.5em;
+                    font-size: 1.2em;
+                    font-weight: normal;
                     margin-bottom: 12px;
                     text-transform: uppercase;
                 }
@@ -273,7 +277,8 @@
 
                 .heading h3 a {
                     color: #00cc00;
-                    font-size: 1.2em;
+                    font-size: .9em;
+                    font-weight: normal;
                     text-transform: none;
                 }
 
