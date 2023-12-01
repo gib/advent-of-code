@@ -37,7 +37,7 @@ fs.readFileSync(inputPath, 'utf-8')
     .forEach((entry, index) =>  {
         // The input has some sneaky combined numbers in the string
         // search and replace in the source to ensure the desired result.
-        // Only found the two I'm searching for in my input, but added the others here.
+        // Only found the three I'm searching for in my input, but added the others here.
         // .replace("eighthree", "eightthree")
         // .replace("fiveight", "fiveeight")
         // .replace("nineight", "nineeight")
