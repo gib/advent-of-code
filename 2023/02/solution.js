@@ -11,9 +11,9 @@ const games = fs.readFileSync('./input.txt', 'utf-8').split(/\r?\n/);
 // rounds: n color
 let sumPossible = 0;
 const maxMap = {
-    "red": 12,
-    "green": 13,
-    "blue": 14,
+    red: 12,
+    green: 13,
+    blue: 14,
 };
 
 const gameIsPossible = rounds => {

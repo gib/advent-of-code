@@ -2,7 +2,7 @@
 const fs = require('fs');
 const { posix } = require('path');
 
-const DEBUG = true;
+const DEBUG = false;
 
 // --- Part One ---
 const motions = fs.readFileSync(DEBUG ? './test.txt' : './input.txt', 'utf-8').split(/\r?\n/);
@@ -113,6 +113,7 @@ motions.forEach(motion => {
 });
 
 console.log('The tail visited', tail.visitCount, 'positions.');
+
 
 // --- Part Two ---
 const motions2 = fs.readFileSync(DEBUG ? './test2.txt' : './input.txt', 'utf-8').split(/\r?\n/);
