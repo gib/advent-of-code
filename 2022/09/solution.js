@@ -138,29 +138,28 @@ motions2.forEach(motion => {
     const direction = motion.split(' ')[0];
     let steps = parseInt(motion.split(' ')[1]);
 
-    debugger;
-    while (steps > 0) {
-        steps = steps - 1;
+    // while (steps > 0) {
+    //     steps = steps - 1;
 
-        // Move the head knot, note that prev positions are stored
-        rope[0].move(direction);
-        rope[0].updateLog();
+    //     // Move the head knot, note that prev positions are stored
+    //     rope[0].move(direction);
+    //     rope[0].updateLog();
 
-        // Now check all of the following knots,
-        for (let i = 1; i < rope.length; i++) {
-            if (rope[i - 1].distance(rope[i]) >= 2) {
-                // Don't move directly to prev,
-                // apply the same move path...
-                if (i === 1) {
-                    rope[i].moveTo(rope[i - 1].prev);
-                }
-                else {
-                    rope[i].follow(rope[i - 1]);
-                }
-            }
-            rope[i].updateLog();
-        }
-    }
+    //     // Now check all of the following knots,
+    //     for (let i = 1; i < rope.length; i++) {
+    //         if (rope[i - 1].distance(rope[i]) >= 2) {
+    //             // Don't move directly to prev,
+    //             // apply the same move path...
+    //             if (i === 1) {
+    //                 rope[i].moveTo(rope[i - 1].prev);
+    //             }
+    //             else {
+    //                 rope[i].follow(rope[i - 1]);
+    //             }
+    //         }
+    //         rope[i].updateLog();
+    //     }
+    // }
 });
 
 // rope.forEach((knot, index) => { 
@@ -168,4 +167,4 @@ motions2.forEach(motion => {
 // });
 debugger;
 console.log(rope[9].visitCount);
-console.log(rope[9].log);
+// console.log(rope[9].log);
